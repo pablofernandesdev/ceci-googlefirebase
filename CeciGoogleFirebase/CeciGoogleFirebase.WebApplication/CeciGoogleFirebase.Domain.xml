@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CeciGoogleFirebase.Domain</name>
+    </assembly>
+    <members>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Address.AddressDeleteDTO.AddressId">
+            <summary>
+            Identifier address
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Address.AddressIdentifierDTO.AddressId">
+            <summary>
+            Identifier address
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Address.AddressZipCodeDTO.ZipCode">
+            <summary>
+            Zip code
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Auth.AuthResultDTO.UserId">
+            <summary>
+            User identifier code
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Auth.AuthResultDTO.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Auth.AuthResultDTO.Username">
+            <summary>
+            User name
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Auth.AuthResultDTO.Role">
+            <summary>
+            User role
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Auth.AuthResultDTO.Token">
+            <summary>
+            Token jwt
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Auth.ForgotPasswordDTO.Email">
+            <summary>
+            User email
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Auth.LoginDTO.Username">
+            <summary>
+            User name
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Auth.LoginDTO.Password">
+            <summary>
+            User password
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Commons.ResultDataResponse`1.TotalPages">
+            <summary>
+            Total pages
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Commons.ResultDataResponse`1.TotalItems">
+            <summary>
+            Total items
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Commons.ResultDataResponse`1.Data">
+            <summary>
+            Data
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Import.FileUploadDTO.File">
+            <summary>
+            File for import
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.Notification.NotificationSendDTO">
+            <summary>
+            Send notification
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Notification.NotificationSendDTO.IdUser">
+            <summary>
+            Identifier user 
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Notification.NotificationSendDTO.Title">
+            <summary>
+            Notification title
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Notification.NotificationSendDTO.Body">
+            <summary>
+            Notification body
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Register.UserLoggedUpdateDTO.Name">
+            <summary>
+            Name user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Register.UserLoggedUpdateDTO.Email">
+            <summary>
+            Email user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Register.UserRedefinePasswordDTO.CurrentPassword">
+            <summary>
+            Current password user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Register.UserRedefinePasswordDTO.NewPassword">
+            <summary>
+            New password user
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.Register.UserSelfRegistrationDTO">
+            <summary>
+            User self registration DTO
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Register.UserSelfRegistrationDTO.Name">
+            <summary>
+            Name user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Register.UserSelfRegistrationDTO.Email">
+            <summary>
+            Email user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Register.UserSelfRegistrationDTO.Password">
+            <summary>
+            Password user
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.Role.IdentifierRoleDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Role.IdentifierRoleDTO.RoleId">
+            <summary>
+            Identifier user
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.Role.RoleAddDTO">
+            <summary>
+            Add role DTO
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Role.RoleAddDTO.Name">
+            <summary>
+            Name role
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Role.RoleDeleteDTO.RoleId">
+            <summary>
+            Identifier user
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.Role.RoleResultDTO">
+            <summary>
+            Role result DTO
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Role.RoleResultDTO.RoleId">
+            <summary>
+            Role identifier
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Role.RoleResultDTO.Name">
+            <summary>
+            Name role
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.Role.RoleUpdateDTO">
+            <summary>
+            Role update DTO
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Role.RoleUpdateDTO.RoleId">
+            <summary>
+            Identifier role
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.Role.RoleUpdateDTO.Name">
+            <summary>
+            Name role
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.User.UserAddDTO">
+            <summary>
+            Add user DTO
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserAddDTO.Name">
+            <summary>
+            Name user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserAddDTO.Email">
+            <summary>
+            Email user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserAddDTO.Password">
+            <summary>
+            Password user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserAddDTO.RoleId">
+            <summary>
+            Identifier role
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.User.UserDeleteDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserDeleteDTO.UserId">
+            <summary>
+            Identifier user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserFilterDTO.Name">
+            <summary>
+            Name user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserFilterDTO.Email">
+            <summary>
+            Email user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserFilterDTO.RoleId">
+            <summary>
+            Identifier role
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.User.UserIdentifierDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserIdentifierDTO.UserId">
+            <summary>
+            Identifier user
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.User.UserImportDTO">
+            <summary>
+            User import DTO
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserImportDTO.Name">
+            <summary>
+            Name user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserImportDTO.Email">
+            <summary>
+            Email user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserImportDTO.Password">
+            <summary>
+            Password user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserImportDTO.PasswordBase64Decode">
+            <summary>
+            Decrypted user password
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserImportDTO.RoleId">
+            <summary>
+            Identifier role
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserResultDTO.UserId">
+            <summary>
+            User identifier
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserResultDTO.Name">
+            <summary>
+            Name user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserResultDTO.Email">
+            <summary>
+            Email user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserResultDTO.Username">
+            <summary>
+            User name
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserResultDTO.Role">
+            <summary>
+            Role user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserResultDTO.IsExternalProvider">
+            <summary>
+            Is external provider
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.User.UserUpdateDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserUpdateDTO.UserId">
+            <summary>
+            Identifier user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserUpdateDTO.Name">
+            <summary>
+            Name user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserUpdateDTO.Email">
+            <summary>
+            Email user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserUpdateDTO.Password">
+            <summary>
+            Password user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserUpdateDTO.RoleId">
+            <summary>
+            Identifier role
+            </summary>
+        </member>
+        <member name="T:CeciGoogleFirebase.Domain.DTO.User.UserUpdateRoleDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserUpdateRoleDTO.UserId">
+            <summary>
+            Identifier user
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.User.UserUpdateRoleDTO.RoleId">
+            <summary>
+            Identifier role
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.DTO.ValidationCode.ValidationCodeValidateDTO.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.Entities.RefreshToken.UserId">
+            <summary>
+            User identifier
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.Entities.RegistrationToken.UserId">
+            <summary>
+            User identifier
+            </summary>
+        </member>
+        <member name="P:CeciGoogleFirebase.Domain.Entities.ValidationCode.UserId">
+            <summary>
+            User identifier
+            </summary>
+        </member>
+    </members>
+</doc>

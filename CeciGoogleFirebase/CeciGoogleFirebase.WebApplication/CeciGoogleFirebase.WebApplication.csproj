@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Desenvolvimento\pablo\ceci-googlefirebase\CeciGoogleFirebase\CeciGoogleFirebase.WebApplication\CeciGoogleFirebase.WebApplication.xml</DocumentationFile>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+   <GenerateDocumentationFile>true</GenerateDocumentationFile>
+   <UserSecretsId>343c80e2-fad8-45cd-ad96-48a6be4fdb0f</UserSecretsId>
+   <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.28" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.28" />
+    <PackageReference Include="Hangfire.Dashboard.Authorization" Version="3.0.0" />
+    <PackageReference Include="Hangfire.MySqlStorage" Version="2.0.3" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.28" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CeciGoogleFirebase.Domain\CeciGoogleFirebase.Domain.csproj" />
+    <ProjectReference Include="..\CeciGoogleFirebase.Infra.CrossCutting\CeciGoogleFirebase.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\CeciGoogleFirebase.Infra.Data\CeciGoogleFirebase.Infra.Data.csproj" />
+    <ProjectReference Include="..\CeciGoogleFirebase.Service\CeciGoogleFirebase.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\UploadFiles\" />
+  </ItemGroup>
+  
+  <Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
+   <Copy SourceFiles="CeciGoogleFirebase.WebApplication.xml" DestinationFolder="$(PublishDir)" /> 
+   <Copy SourceFiles="CeciGoogleFirebase.Domain.xml" DestinationFolder="$(PublishDir)" /> 
+  </Target>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+</Project>

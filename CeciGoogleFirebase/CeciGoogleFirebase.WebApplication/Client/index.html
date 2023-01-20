@@ -1,0 +1,49 @@
+﻿<html>
+
+<head>
+    <title>Ceci Google Firebase</title>
+</head>
+
+<body>
+    <button onclick="login()">LOGIN COM GOOGLE</button>
+
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBF5BnIZBgGBZH0zM_uLg8Tk-glU0eHVLc",
+            authDomain: "ceciauth-8213d.firebaseapp.com",
+            projectId: "ceciauth-8213d",
+            storageBucket: "ceciauth-8213d.appspot.com",
+            messagingSenderId: "677555246735",
+            appId: "1:677555246735:web:99d8ed310847c5b01e82fa",
+            measurementId: "G-42ZCSW1WFE"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var provider = new firebase.auth.GoogleAuthProvider();
+        provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+        function login() {
+            firebase.auth().signInWithPopup(provider).then(function (result) {
+                // ESTE NÃO É O JWT, É O TOKEN PARA OBTER INFOS DO GOOGLE
+                var token = result.credential.accessToken;
+                var user = result.user;
+                firebase.auth()
+                    .currentUser
+                    .getIdToken()
+                    .then((idToken) => {
+                        // ESTE É O TOKEN JWT QUE VAMOS MANDAR PARA API
+                        console.log(idToken);
+                    }).catch(function (error) {
+                        console.log(error);
+                    });
+            }).catch(function (error) {
+                // DEU RUIM
+                console.log(error);
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{7EA57856-6D69-474B-9DAF-434BD62C4C4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{6D1485F3-547A-4C2C-A086-06E955EDE31D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Service", "3 - Service", "{AE5375A4-495C-4E49-89AE-BAD16B3E342C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{2CD61A3F-0B7B-4D12-AF74-30B74728930E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{9D9E55F8-DDD7-4415-8384-C9D6C1DF653B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{4E4253E4-A660-499A-962A-ED278B501F38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CeciGoogleFirebase.WebApplication", "CeciGoogleFirebase.WebApplication\CeciGoogleFirebase.WebApplication.csproj", "{99D8F2F5-C1D7-4ECD-8263-3185FB5F3F03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CeciGoogleFirebase.Domain", "CeciGoogleFirebase.Domain\CeciGoogleFirebase.Domain.csproj", "{C95BFA7E-B522-4546-A762-8D74D1688473}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CeciGoogleFirebase.Service", "CeciGoogleFirebase.Service\CeciGoogleFirebase.Service.csproj", "{3FAA3C3F-C78A-4681-85FD-5CA7C2023A70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CeciGoogleFirebase.Infra.Data", "CeciGoogleFirebase.Infra.Data\CeciGoogleFirebase.Infra.Data.csproj", "{52423DE8-0FF0-4E6C-A61D-E1F56DFBC3AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CeciGoogleFirebase.Infra.CrossCutting", "CeciGoogleFirebase.Infra.CrossCutting\CeciGoogleFirebase.Infra.CrossCutting.csproj", "{939EAD23-0CCB-491B-A543-BFE464933A26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74599805-472A-442A-AC51-09462CA6AF95}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Test", "5 - Test", "{69C20F8D-3B6A-473B-8205-42F86BEACD2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CeciGoogleFirebase.Test", "CeciGoogleFirebase.Test\CeciGoogleFirebase.Test.csproj", "{B80BA474-6333-410C-A800-F285C01B7AF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99D8F2F5-C1D7-4ECD-8263-3185FB5F3F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D8F2F5-C1D7-4ECD-8263-3185FB5F3F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D8F2F5-C1D7-4ECD-8263-3185FB5F3F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D8F2F5-C1D7-4ECD-8263-3185FB5F3F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95BFA7E-B522-4546-A762-8D74D1688473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95BFA7E-B522-4546-A762-8D74D1688473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95BFA7E-B522-4546-A762-8D74D1688473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95BFA7E-B522-4546-A762-8D74D1688473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FAA3C3F-C78A-4681-85FD-5CA7C2023A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FAA3C3F-C78A-4681-85FD-5CA7C2023A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FAA3C3F-C78A-4681-85FD-5CA7C2023A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FAA3C3F-C78A-4681-85FD-5CA7C2023A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52423DE8-0FF0-4E6C-A61D-E1F56DFBC3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52423DE8-0FF0-4E6C-A61D-E1F56DFBC3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52423DE8-0FF0-4E6C-A61D-E1F56DFBC3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52423DE8-0FF0-4E6C-A61D-E1F56DFBC3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939EAD23-0CCB-491B-A543-BFE464933A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939EAD23-0CCB-491B-A543-BFE464933A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939EAD23-0CCB-491B-A543-BFE464933A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939EAD23-0CCB-491B-A543-BFE464933A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B80BA474-6333-410C-A800-F285C01B7AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80BA474-6333-410C-A800-F285C01B7AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80BA474-6333-410C-A800-F285C01B7AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80BA474-6333-410C-A800-F285C01B7AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D9E55F8-DDD7-4415-8384-C9D6C1DF653B} = {2CD61A3F-0B7B-4D12-AF74-30B74728930E}
+		{4E4253E4-A660-499A-962A-ED278B501F38} = {2CD61A3F-0B7B-4D12-AF74-30B74728930E}
+		{99D8F2F5-C1D7-4ECD-8263-3185FB5F3F03} = {7EA57856-6D69-474B-9DAF-434BD62C4C4A}
+		{C95BFA7E-B522-4546-A762-8D74D1688473} = {6D1485F3-547A-4C2C-A086-06E955EDE31D}
+		{3FAA3C3F-C78A-4681-85FD-5CA7C2023A70} = {AE5375A4-495C-4E49-89AE-BAD16B3E342C}
+		{52423DE8-0FF0-4E6C-A61D-E1F56DFBC3AF} = {9D9E55F8-DDD7-4415-8384-C9D6C1DF653B}
+		{939EAD23-0CCB-491B-A543-BFE464933A26} = {4E4253E4-A660-499A-962A-ED278B501F38}
+		{B80BA474-6333-410C-A800-F285C01B7AF3} = {69C20F8D-3B6A-473B-8205-42F86BEACD2F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E79E07D6-38BE-43A0-8DCF-946B9671A382}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+﻿Nao apagar, arquivo pra manter a pasta para execução de testes com criação de arquivos.
